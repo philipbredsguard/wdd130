@@ -13,6 +13,10 @@ h1 {
     color: darkblue;
 }
 
+main {
+    max-width: 150px;
+}
+
 main img {
     width: 9rem;
     height: auto;
