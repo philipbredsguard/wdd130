@@ -2,7 +2,6 @@
     --primary-color: rgb(128, 155, 176);
     --secondary-color: rgb(193, 193, 193);
     --accent-color-1: rgb(63, 84, 63);
-    --accent-color-2: rgb(196, 197, 148);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -39,7 +38,7 @@ article {
     padding: 8px;
 }
 
-.socialmedia {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -65,7 +64,7 @@ h1 {
     color: rgb(9, 9, 9);
 }
 
-article {
+.hero article {
     position: absolute;
     background-color: var(--secondary-color);
     bottom: 0px;
