@@ -1,22 +1,29 @@
-:root {}
+:root {
+    --primary-color: rgb(109, 144, 109);
+    --secondary-color: rgb(163, 163, 127);
+    --heading-font: ;
+    --text-color-1: white;
+    --text-color-2: black;
+}
 
 nav {
-    background-color: rgb(38, 38, 173);
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--text-color-1);
     display: block;
     padding: 20px;
+    font: var(--heading-font);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 main {
-    max-width: 300px;
+    max-width: 500px;
 }
 
 main img {
@@ -36,8 +43,8 @@ aside {
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
-    background-color: #eee;
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--text-color-1);
     text-align: center;
 }
 
