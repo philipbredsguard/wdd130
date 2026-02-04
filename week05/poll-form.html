@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
-<header>
+<body>
+    <header>
 
-</header>
+    </header>
 
-<main>
-    <form>
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required> 
+    <main>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+        <form>
+            <div class="form-item column2">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="email">Email Address:</label>
+                <input type="text" id="useremail" name="useremail" required>
+            </div>
+            <div class="form-item column1">
+                <label for="quanitity">What is your favorite browser?</label>
+                <select name="quanitity" id="quanitity">
+                    <option value="1">Chrome</option>
+                    <option value="2">Safari</option>
+                    <option value="3">Edge</option>
+                </select>
+            </div>
+            <div class="form-item column1">
+                <label><input type="checkbox" id="pet" name="pet">Do you have a household
+                    pet?</label>
+            </div>
+            <div class="form-item column1">
+                <label for="message">List the places you have lived.</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
 
-        <label for="email">Email Address:</label>
-        <input type="text" id="useremail" name="useremail" required>
+    <footer>
 
-        <label for="quanitity">What is your favorite browser?</label>
-        <select name="quanitity" id="quanitity">
-            <option value="1">Chrome</option>
-            <option value="2">Safari</option>
-            <option value="3">Edge</option>
-        </select>
-
-        <label><input type="checkbox" id="pet" name="pet">Do you have a household pet?</label>
-
-        <label for="message">List the places you have lived.</label>
-        <textarea id="feedback" name="feedback" rows="4"></textarea>
-
-        <button type="submit">Submit Poll</button>
-    </form>
-</main>
-
-<footer>
-
-</footer>
+    </footer>
+</body>
