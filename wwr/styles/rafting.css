@@ -218,26 +218,15 @@ footer {
 }
 
 /* ==========================================================================
-   8. Contact Us Page Specific Styles – Updated
+   8. Contact Us Page Specific Styles
    ========================================================================== */
-
-/* NEW: This is the wrapper that creates the side-by-side layout */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* equal columns */
     gap: 2.5rem;
     margin: 1rem 0 3rem;
 }
 
-@media (max-width: 800px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        /* stack on smaller screens */
-    }
-}
-
-/* Make info section clean and readable */
 .contact-info {
     line-height: 1.8;
 }
@@ -261,11 +250,9 @@ footer {
 .map-container iframe {
     width: 100%;
     height: 380px;
-    /* taller like many examples */
     border: 0;
 }
 
-/* Form – make it look boxed and prominent like the example */
 .contact-form {
     background-color: var(--secondary-color);
     padding: 2rem;
@@ -308,7 +295,6 @@ fieldset legend {
     font-size: 1.1rem;
 }
 
-/* Radio labels – better spacing and alignment */
 fieldset label {
     display: block;
     margin: 0.6rem 0;
@@ -319,10 +305,8 @@ fieldset label {
 [type="checkbox"] {
     margin-right: 0.8rem;
     transform: scale(1.15);
-    /* slightly larger for better touch/click */
 }
 
-/* Checkbox label tweak */
 .checkbox-label {
     display: flex;
     align-items: center;
@@ -330,7 +314,6 @@ fieldset label {
     font-weight: normal;
 }
 
-/* Submit button – prominent like example */
 form button[type="submit"] {
     margin-top: 1.8rem;
     width: 100%;
@@ -348,7 +331,6 @@ form button[type="submit"]:hover {
     background-color: rgb(40, 90, 130);
 }
 
-/* Team / Employees */
 .team {
     margin: 4rem 0 3rem;
     text-align: center;
@@ -361,25 +343,18 @@ form button[type="submit"]:hover {
     color: var(--primary-color);
 }
 
-/* Horizontal row layout */
 .employee-grid {
     display: flex;
-    /* Switch to flex for strict horizontal */
     flex-direction: row;
-    /* Force row (no wrap by default) */
     justify-content: center;
-    /* Center the three items */
     gap: 3rem;
-    /* Nice spacing between profiles */
     flex-wrap: wrap;
-    /* Allow wrap only on very small screens */
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .employee-grid figure {
     flex: 0 1 280px;
-    /* Fixed width per card, prevents stretching */
     text-align: center;
     background: white;
     border-radius: 12px;
@@ -392,11 +367,8 @@ form button[type="submit"]:hover {
     width: 100%;
     height: auto;
     max-height: 280px;
-    /* Consistent height */
     object-fit: cover;
-    /* Crop nicely without distortion */
-    border-radius: 50%;
-    /* Circle photos — very common for team profiles */
+    border-radius: 40%;
     border: 6px solid var(--secondary-color);
     margin-bottom: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -407,42 +379,4 @@ form button[type="submit"]:hover {
     font-size: 1.15rem;
     color: var(--primary-color);
     margin-top: 0.5rem;
-}
-
-/* ==========================================================================
-   9. Media Queries (overall responsiveness)
-   ========================================================================== */
-@media (max-width: 900px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .toplogo {
-        margin: 0 auto 1rem;
-    }
-
-    .navigation {
-        justify-content: center;
-    }
-
-    .hero h1 {
-        left: 2%;
-        right: 2%;
-    }
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .history,
-    .adventure {
-        grid-template-columns: 1fr;
-    }
 }
