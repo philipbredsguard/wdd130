@@ -1,3 +1,162 @@
+/* :root {
+    --primary-color: rgb(50, 109, 154);
+    --secondary-color: rgb(193, 193, 193);
+    --accent-color-1: rgb(63, 84, 63);
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.toplogo {
+    margin-left: 3rem
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent-color-1);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 8px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 72px;
+    width: 700px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+    color: rgb(9, 9, 9);
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.hero article {
+    position: absolute;
+    background-color: var(--secondary-color);
+    bottom: 0px;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    height: auto;
+    box-shadow: 0 0 10px grey;
+}
+
+.history {
+    display: grid;
+    grid-template: 15% 85% / 35% 30% 35%;
+    place-items: center;
+
+}
+
+.history h2 {
+    grid-area: 1/1/2/4;
+    display: grid;
+}
+
+.history img {
+    width: 200px;
+    height: auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template: 20% 80% / 20% 20% 20% 20% 20%;
+    place-items: center;
+}
+
+.adventure h2 {
+    grid-area: 1/1/2/6;
+    display: grid;
+}
+
+.adventure img {
+    width: 120px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+}
+
+/* CONTACT US PAGE */
+
+/* Make main flexible for side-by-side on larger screens */
+/* main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+} */
+
 /* ==========================================================================
    1. Root Variables & Reset
    ========================================================================== */
