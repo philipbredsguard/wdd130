@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. Root Variables & Reset
+    Root Variables & Reset
    ========================================================================== */
 :root {
     --primary-color: rgb(50, 109, 154);
@@ -23,7 +23,7 @@ body {
 }
 
 /* ==========================================================================
-   2. Typography
+   Typography
    ========================================================================== */
 h1,
 h2 {
@@ -42,13 +42,12 @@ h2 {
 }
 
 /* ==========================================================================
-   3. Global Layout & Centering
+   Global Layout & Centering
    ========================================================================== */
 header,
 main,
 footer {
     max-width: 960px;
-    /* increased from 840px for better modern screens */
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -62,7 +61,7 @@ main {
 }
 
 /* ==========================================================================
-   4. Header & Navigation
+   Header & Navigation
    ========================================================================== */
 header {
     display: grid;
@@ -100,7 +99,7 @@ header {
 }
 
 /* ==========================================================================
-   5. Hero Section
+   Hero Section
    ========================================================================== */
 .hero {
     position: relative;
@@ -144,7 +143,7 @@ header {
 }
 
 /* ==========================================================================
-   6. History & Adventure Grid Sections
+   History & Adventure Grid Sections
    ========================================================================== */
 .history,
 .adventure {
@@ -189,7 +188,7 @@ header {
 }
 
 /* ==========================================================================
-   7. Footer
+   Footer
    ========================================================================== */
 footer {
     background-color: var(--secondary-color);
@@ -218,7 +217,7 @@ footer {
 }
 
 /* ==========================================================================
-   8. Contact Us Page Specific Styles
+   Contact Us Page Specific Styles
    ========================================================================== */
 .contact-container {
     display: grid;
@@ -385,4 +384,79 @@ form button[type="submit"]:hover {
     font-size: 1.15rem;
     color: var(--primary-color);
     margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   Trips Page Specific Styles
+   ========================================================================== */
+.trip-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0 4rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+section,
+table,
+.cta-box {
+    width: 100%;
+}
+
+table {
+    width: 90%;
+    margin: 2rem auto 4rem;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.2rem;
+    text-align: left;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.cta-box {
+    text-align: center;
+    margin: .2rem auto .5rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    width: 90%;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.2rem 2.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
