@@ -210,10 +210,21 @@ footer {
 /* ==========================================================================
    Contact Us Page Specific Styles
    ========================================================================== */
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.contact-header h1 {
+    margin-bottom: 0.5rem;
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    align-items: start;
     margin: 1rem 0 3rem;
 }
 
@@ -233,8 +244,8 @@ footer {
 .map-container {
     position: relative;
     width: 100%;
-    height: 38rem;
-    padding-bottom: 56%;
+    height: 55rem;
+    padding-bottom: 75%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
@@ -343,19 +354,19 @@ form button[type="submit"]:hover {
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
-    flex-wrap: wrap;
-    max-width: 1100px;
+    flex-wrap: nowrap;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .employee-grid figure {
-    flex: 0 1 280px;
+    flex: 1 1 0;
     text-align: center;
     background: white;
     border-radius: 12px;
     padding: 1.2rem 0.8rem;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease;
+    min-width: 200px;
 }
 
 .employee-grid img {
