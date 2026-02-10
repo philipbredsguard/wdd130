@@ -94,10 +94,6 @@ header {
     font-weight: bold;
 }
 
-.navigation a:hover {
-    color: var(--accent-color-1);
-}
-
 /* ==========================================================================
    Hero Section
    ========================================================================== */
@@ -209,11 +205,6 @@ footer {
 .socialmedia img {
     width: 44px;
     height: auto;
-    transition: transform 0.2s;
-}
-
-.socialmedia a:hover img {
-    transform: scale(1.15);
 }
 
 /* ==========================================================================
@@ -309,7 +300,6 @@ fieldset label {
 [type="radio"],
 [type="checkbox"] {
     margin-right: 0.8rem;
-    transform: scale(1.15);
 }
 
 .checkbox-label {
